@@ -57,8 +57,8 @@
 .purple-bg{
     background-color: #A59FC2;
 }
-.purple-bg2{
-    background-color: #6B1761;
+.bg-color{
+    background-color: #000033;
 }
 .plum{
     background-color: #631C39;
@@ -74,7 +74,7 @@
     border: 1px solid #631C39 ;
 }
 .lt-bl {
-    color: #8566B4;
+    color: #ffba00;
 }
 .d-blue{
     background-color: #0111D6;

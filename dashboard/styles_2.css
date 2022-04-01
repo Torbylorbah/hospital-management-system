@@ -32,22 +32,27 @@ aside a {
 
 a.nav-top {
     padding: 10% 10%;
+    transform: translateY(-5%);
 }
 
 a.nav-btm1{
     padding-left: 10%;
+    transition: 0.5s;
 }
 
 a.nav-btm1:hover {
     padding-left: calc(10% - 1px);
+    transform: translateY(-5%);
 }
 
 a.nav-btm2 {
     padding-left: 14%;
+    transition: 0.5s;
 }
 
 a.nav-btm2:hover {
     padding-left: calc(14% - 1px);
+    transform: translateY(-5%);
 }
 
 aside a img,aside a i {
@@ -61,11 +66,15 @@ a.nav-btm1 img, a.nav-top img, a.nav-btm1 i, a.nav-top i {
 /* a.nav-btm2 img {
     margin-right: 9%;
 } */
+aside nav a.active, aside nav a{
+    transition: 0.5s;
+}
 
 aside nav a.active, aside nav a:hover {
-    background-color: #4D4DFF;
+    background-color: #ffba00;
     border-left: 1px solid;
     padding-left: calc(15% - 1px);
+    transform: translateY(-5%);
 }
 
 main {
@@ -254,7 +263,7 @@ button:focus, button:hover {
 }
 .moving-divs:hover{
     transform: translateY(-5%);
-    border: #4D4DFF 1px solid;
+    border: #ffba00 1px solid;
 }
 
 /*  */
