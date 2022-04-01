@@ -1,0 +1,45 @@
+
+.doctor-dash-border img{
+    width: 120px;
+    height: 120px;
+    padding: 4px;
+    border: 2px solid gray;
+    border-radius: 50%;
+}
+.doctor-dash-search input{
+    padding: 12px 100px;
+    
+}
+.doctor-dash-btn{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+}
+.calls-div{
+    border: 1px solid gray;
+}
+.doctor-topmost-card{
+    padding: 10px 20px;
+}
+.icon-divv{
+   border-radius: 5px;
+   
+}
+/* .icon-divv i{
+    text-align: center;
+} */
+.doctor-topmost-card{
+    align-items: flex-start;
+}
+.theform2 form input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box; 
+}
+
+@media only screen and (max-width: 650px) {
+    table{
+        width: 50%;
+    }
+}
