@@ -42,6 +42,10 @@ html {
     overflow-x: hidden;
 }
 
+#my-container {
+    overflow-x: hidden;
+}
+
 section {
     padding: 6rem 8%;
 }
@@ -56,19 +60,13 @@ section {
     letter-spacing: .4rem;
 }
 
-
-/* section {
-    background-color: #eec0c6;
-    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
-} */
-
 .heading span {
     text-transform: uppercase;
     color: #141010;
 }
 
 .your-health {
-    background: url(../images/night-view-767852.jpg);
+    background-image: url(../images/home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -677,8 +675,11 @@ section {
     background-position: center;
     background-size: cover;
     background-blend-mode: multiply;
-    height: 100vh;
     animation: scale 2s;
+}
+
+#main-container {
+    overflow-x: hidden;
 }
 
 .thecontainer {
@@ -723,9 +724,9 @@ section {
     background: white;
     grid-gap: 2%; */
     display: grid;
-    gap: 5rem;
+    gap: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    padding-top: 14rem;
+    padding-top: 5rem;
     cursor: pointer;
 }
 
@@ -734,8 +735,6 @@ section {
     background-color: #fff;
     border: 2px solid rgb(226, 140, 12);
     border-radius: 10px;
-    position: relative;
-    height: 20vh;
 }
 
 .admin-img h2 {
@@ -745,7 +744,6 @@ section {
     margin: 2rem;
     border-radius: 5px;
     color: white;
-    margin-top: 12rem;
 }
 
 .admin-img h2:hover {
@@ -754,26 +752,18 @@ section {
 }
 
 .admin-img img {
-    width: 60%;
+    width: 50%;
     align-items: center;
-    margin-top: 2rem;
-    position: absolute;
-    top: -12rem;
-    right: 3rem;
 }
 
-.hhh {
+
+/* .hhh {
     padding-top: 1rem;
-    height: 2vh;
     margin-top: -1rem;
-}
+} */
 
 #admin-image {
     width: 70%;
-    position: absolute;
-    top: -12rem;
-    right: 1rem;
-    height: 20vh;
 }
 
 .soro {
@@ -793,7 +783,6 @@ section {
     flex-wrap: wrap;
     gap: 2rem;
     width: 100%;
-    height: 100vh;
 }
 
 .home-section .common {
@@ -802,7 +791,7 @@ section {
 }
 
 .home-section .common img {
-    margin-top: 4rem;
+    margin-top: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 0.9rem rgb(0, 0, 0, 0.1);
     width: 90%;
@@ -878,5 +867,8 @@ section {
     }
     .about .row .content h3 {
         padding-top: 2rem;
+    }
+    .man {
+        display: block;
     }
 }
