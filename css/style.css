@@ -231,9 +231,9 @@ section {
     border: var(--border);
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
-    color: var(--wc-purple);
+    color: var(--wc-light-blue);
     cursor: pointer;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     background: #fff;
     opacity: 0;
     animation: moveBanner 1s .9s forwards;
@@ -337,7 +337,7 @@ section {
 
 .about .row .image img {
     width: 100%;
-    /* height: 60vh; */
+    height: 90vh;
     border-radius: 10px;
     box-shadow: 0 0 0.9rem rgb(0, 0, 0, 0.1);
 }
