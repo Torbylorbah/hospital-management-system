@@ -130,7 +130,7 @@ body {
 }
 
 .section-1 .contact-link p .home a {
-    color: var(--wc-light-blue);
+    color: var(--wc-orange);
     text-decoration: none;
 }
 
@@ -188,23 +188,24 @@ body {
 
 .map-part .the-form h2 {
     color: var(--wc-light-blue);
-    padding-left: 2rem;
+    padding-left: 4rem;
 }
 
 .map-part .the-form p {
-    padding-left: 2rem;
+    padding-left: 4rem;
 }
 
 .map-part .the-form form {
-    padding: 2rem;
-    margin: 2rem;
+    padding: 4rem;
+    margin: 2rem 4rem;
     border: 2px solid var(--wc-light-blue);
     background-color: #F6F6F6;
+    border-radius: 5px;
 }
 
 .map-part .the-form form input,
 .map-part .the-form form textarea {
-    padding: 10px 50px;
+    padding: 1rem 1rem;
     text-align: center;
     outline: none;
     width: 100%;
@@ -228,7 +229,7 @@ body {
     color: #fff;
     font-size: 20px;
     font-weight: 500;
-    margin: 1rem 2rem;
+    margin: 1rem 4rem;
 }
 
 .map-part .the-form button:hover {
