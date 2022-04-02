@@ -203,6 +203,11 @@
 .gap2{
     gap: 30px;
 }
+/* icons */
+i{
+    font-size: 20px;
+}
+
 /* line height */
 .line-h{
     line-height: 2rem;
