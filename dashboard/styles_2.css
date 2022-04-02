@@ -341,9 +341,7 @@ button:focus, button:hover {
     font-size: 16px;
     line-height: 30px;
 }
-.patient-med{
-    display: block;
-}
+
 
 @media only screen and (max-width: 1024px) {
     aside {
@@ -386,7 +384,10 @@ button:focus, button:hover {
         display: block;
         padding: 5% 3%;
     }
-
+    .col-4{
+        width: 80%;
+        max-width: 350px;
+    }
     .dashboard-cartoon {
         filter: opacity(0.3);
     }
@@ -412,6 +413,10 @@ button:focus, button:hover {
 }
 
 @media only screen and (max-width: 650px) {
+    .the-buttons{
+        display: flex;
+        gap: 10px;
+    }
     h1 {
         font-size: 20px;
     }
@@ -448,7 +453,7 @@ button:focus, button:hover {
         padding: unset;
     }
 
-    aside nav a img {
+    aside nav a i {
         padding: 10px;
     }
 
@@ -471,7 +476,7 @@ button:focus, button:hover {
         max-width: 350px;
     }
 
-    .appointment-name-img {
+    /* .appointment-name-img {
         padding: 1.5% 6%;
     }
 
@@ -481,6 +486,9 @@ button:focus, button:hover {
 
     .appointment-name-img .image img{
         width: 100%;
+    } */
+    .patient-med{
+        display: block;
     }
 }
 
