@@ -72,7 +72,7 @@ aside nav a.active, aside nav a{
 
 aside nav a.active, aside nav a:hover {
     background-color: #ffba00;
-    border-left: 1px solid;
+    /* border-left: 1px solid; */
     padding-left: calc(15% - 1px);
     transform: translateY(-5%);
 }
