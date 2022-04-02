@@ -1,3 +1,9 @@
+body{
+    overflow-x: hidden;
+}
+#cover-me{
+    overflow-x: hidden;
+}
 .mg-top{
     margin-top: 24px;
 }
