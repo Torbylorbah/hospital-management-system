@@ -341,11 +341,15 @@ button:focus, button:hover {
     font-size: 16px;
     line-height: 30px;
 }
+button{
+    padding: 8px;
+    font-size: 18px;
+}
 
 
 @media only screen and (max-width: 1024px) {
     aside {
-        width: 8%;
+        width: 8.5%;
     }
 
     aside a {
@@ -358,12 +362,12 @@ button:focus, button:hover {
         padding: 20% 10%;
     }
 
-    aside a img,aside a i {
+    aside a i {
         margin: auto;
     }
 
     aside a div {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     a.nav-btm1 img, a.nav-top img, a.nav-btm1 i, a.nav-top i  {
@@ -409,6 +413,10 @@ button:focus, button:hover {
 
     .activities-header {
         padding: 3% 3% 0;
+    }
+
+    table{
+        width: 80%;
     }
 }
 
@@ -472,6 +480,14 @@ button:focus, button:hover {
     }
 
     .dashboard-main .col-3 {
+        width: 80%;
+        max-width: 350px;
+    }
+    .strong-head{
+        width: 100%;
+        max-width: 400px;
+    }
+    table{
         width: 80%;
         max-width: 350px;
     }
