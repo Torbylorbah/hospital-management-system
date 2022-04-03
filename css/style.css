@@ -56,7 +56,7 @@ section {
     text-shadow: var(--text-shadow);
     text-transform: uppercase;
     color: var(--black);
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: .4rem;
 }
 
@@ -66,13 +66,14 @@ section {
 }
 
 .your-health {
-    background-image: url(../images/home.jpg);
+    background-image: url( ../images/home.jpg),linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-blend-mode: multiply;
     height: 100vh;
     animation: scale 10s;
 }
@@ -302,15 +303,15 @@ section {
 
 .services .box-container .box i {
     color: var(--wc-orange);
-    font-size: 2rem;
-    padding-bottom: .6rem;
-    background: #020935;
-    padding: 2rem;
-    border-radius: 50%;
-    position: absolute;
-    top: -2rem;
-    right: 2rem;
-}
+        font-size: 3rem;
+        padding-bottom: .6rem;
+        background: #020935;
+        padding: 1.5rem;
+        border-radius: 50%;
+        position: absolute;
+        top: -2rem;
+        right: 2rem;
+    }
 
 .services .box-container .box h3 {
     color: var(--black);
@@ -351,7 +352,7 @@ section {
     color: var(--black);
     text-shadow: var(--text-shadow);
     font-size: 4rem;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 .about .row .content p {
@@ -585,14 +586,14 @@ section {
 }
 
 .footer .box-container .box h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--white);
     padding: 1rem 0;
 }
 
 .footer .box-container .box a {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--white);
     padding: 1rem 0;
 }
@@ -707,7 +708,7 @@ section {
 }
 
 .admin-img {
-    width: 100%;
+    width: 90%;
     background-color: #fff;
     border: 2px solid rgb(226, 140, 12);
     border-radius: 10px;
@@ -779,10 +780,10 @@ section {
 
 
 /* media queries  */
-@media (max-width:1225px){
-    .about .row .content p{
-        font-size: 1rem;
-        line-height: 1.6rem;
+@media(max-width:1440px) {
+    .about .row .content p {
+        padding: 1rem 0;
+        font-size: 1.6rem;
     }
 }
 
@@ -790,10 +791,9 @@ section {
     .about .row .content h3 {
         color: var(--black);
         text-shadow: var(--text-shadow);
-        font-size: 3rem;
+        font-size: 4rem;
         line-height: 1.8;
-        padding-top: 7rem;
-        margin-top: 3rem;
+        padding-top: 6rem;
     }
 }
 
@@ -809,10 +809,16 @@ section {
     }
 }
 
+@media (max-width:839px) {
+    .about .row .image img {
+        height: unset;
+    }
+}
+
 @media (max-width:768px) {
     #menu-btn {
         display: initial;
-        color: #a00;
+        color: rgb(4, 28, 63);
     }
     .header .navbar {
         position: absolute;
@@ -837,10 +843,13 @@ section {
         font-size: 2rem;
         display: block;
         margin: 2.5rem;
-        color: var(--wc-purple);
+        color: var(--wc-light-blue);
     }
     .header .navbar a.active {
         padding: unset;
+    }
+    .home-section .common {
+        margin-top: 10rem;
     }
 }
 
@@ -853,5 +862,16 @@ section {
     }
     .man {
         display: block;
+    }
+    .your-health {
+        background-position: center;
+        background-size: cover;
+    }
+    .admin-img {
+        width: 80%;
+        background-color: #fff;
+        border: 2px solid rgb(226, 140, 12);
+        border-radius: 10px;
+        margin: 4rem;
     }
 }
