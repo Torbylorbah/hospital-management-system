@@ -192,9 +192,10 @@ font-size: 1.4rem;}
     cursor: pointer;
     border-radius: 5px;
     border: 0;
-    padding: 18px;
+    padding: 10px;
     background-color: #ffba00 ;
     margin-right: 20px;
+    font-size: 16px;
 }
 
 button:focus, button:hover {
@@ -285,13 +286,8 @@ button:focus, button:hover {
 .manage:hover{
     color: black;
 }
-.sign-in-image{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
 .nurses-form{
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -306,9 +302,7 @@ button:focus, button:hover {
     padding: 15px;
 
 }
-.common{
-    padding-left: 15rem;
-}
+
 /* patient dashboard styles */
 .patientImage{
     width: 80px;
@@ -341,13 +335,14 @@ button:focus, button:hover {
     font-size: 16px;
     line-height: 30px;
 }
-.patient-med{
-    display: block;
-}
+/* button{
+    padding: 10px;
+    font-size: 16px;
+} */
 
 @media only screen and (max-width: 1024px) {
     aside {
-        width: 8%;
+        width: 8.5%;
     }
 
     aside a {
@@ -360,12 +355,12 @@ button:focus, button:hover {
         padding: 20% 10%;
     }
 
-    aside a img,aside a i {
+    aside a i {
         margin: auto;
     }
 
     aside a div {
-        font-size: 12px;
+        font-size: 8px;
     }
 
     a.nav-btm1 img, a.nav-top img, a.nav-btm1 i, a.nav-top i  {
@@ -386,7 +381,10 @@ button:focus, button:hover {
         display: block;
         padding: 5% 3%;
     }
-
+    .col-4{
+        width: 80%;
+        max-width: 350px;
+    }
     .dashboard-cartoon {
         filter: opacity(0.3);
     }
@@ -409,12 +407,34 @@ button:focus, button:hover {
     .activities-header {
         padding: 3% 3% 0;
     }
+
+    table{
+        width: 80%;
+    }
+    .patient-med{
+        display: block;
+    }
+    .current{
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 650px) {
+    .the-buttons{
+        display: flex;
+        gap: 10px;
+    }
     h1 {
         font-size: 20px;
     }
+    h4{
+        font-size: 16px;
+    }
+    /* p{
+        font-size: 18px;
+    } */
 
     .f-14-sm {
         font-size: 14px;
@@ -448,7 +468,7 @@ button:focus, button:hover {
         padding: unset;
     }
 
-    aside nav a img {
+    aside nav a i {
         padding: 10px;
     }
 
@@ -470,8 +490,16 @@ button:focus, button:hover {
         width: 80%;
         max-width: 350px;
     }
+    .strong-head{
+        width: 100%;
+        max-width: 400px;
+    }
+    table{
+        width: 80%;
+        max-width: 350px;
+    }
 
-    .appointment-name-img {
+    /* .appointment-name-img {
         padding: 1.5% 6%;
     }
 
@@ -481,7 +509,8 @@ button:focus, button:hover {
 
     .appointment-name-img .image img{
         width: 100%;
-    }
+    } */
+    
 }
 
 @media only screen and (max-width: 400px) {

@@ -206,6 +206,7 @@
 /* icons */
 i{
     font-size: 20px;
+    cursor: pointer;
 }
 
 /* line height */
@@ -279,7 +280,7 @@ table{
 }
 table td,th{
     /* border: 1px solid #292727; */
-    text-align: left;
+    text-align: center;
     padding: 8px;
     font-size: 15px;
 }
@@ -310,15 +311,6 @@ table td,th{
         margin: 10px auto;
     }
 
-    .smiling-doc-image {
-        width: 80% !important;
-        transform: scale(0.9);
-    }
-
-    .app-store-image {
-        display: none;
-    }
-
     .t-a-c {text-align: center;}
 
     .t-a-l {text-align: left;}
@@ -334,13 +326,6 @@ table td,th{
         max-width: 400px;
         margin: 20px auto;
     }
-
-    .col--55s > img {
-        width: 23px;
-        height: 23px;
-        border-radius: 50%;
-    }
-    
     .col-3 {
         width: 100%;
         max-width: 400px;

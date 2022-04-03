@@ -351,7 +351,7 @@
     .about .row .content h3 {
         color: var(--black);
         text-shadow: var(--text-shadow);
-        font-size: 3rem;
+        font-size: 4rem;
         line-height: 1.8;
     }
     
@@ -691,7 +691,7 @@
     }
     
     .man {
-        display: grid;
+         display: grid;
         gap: 3rem;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         padding-top: 5rem;
@@ -839,7 +839,7 @@
         }
     }
     
-    @media (max-width:450px) {
+@media (max-width:450px) {
         html {
             font-size: 50%;
         }
@@ -860,4 +860,5 @@
             border-radius: 10px;
             margin: 4rem;
         }
-    }
+        
+}
