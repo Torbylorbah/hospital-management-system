@@ -261,7 +261,7 @@ body {
 }
 
 .appointment-content {
-    padding: 40px 20px;
+    padding: 90px 20px;
 }
 
 .appointment-content .appointment-card-container {
@@ -312,7 +312,7 @@ body {
 
 .section2 .the-form {
     padding: 20px;
-    margin: auto 50px;
+    /* margin: auto 50px; */
     background-color: #F6F6F6;
 }
 
@@ -321,7 +321,7 @@ body {
     margin: 20px;
     border: 2px solid #2ea2cc;
     background-color: #F6F6F6;
-    width: 50%;
+    width: 90%;
 }
 
 .section2 form input {
@@ -348,6 +348,8 @@ body {
     color: #fff;
     font-size: 20px;
     font-weight: 500;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
 }
 
 .section2 button:hover {
@@ -364,17 +366,18 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     gap: 5rem;
     padding: 2.5rem;
+    margin-top: 2rem;
 }
 
 .footer .box-container .box h3 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     color: var(--white);
     padding: 1rem 0;
 }
 
 .footer .box-container .box a {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--white);
     padding: 1rem 0;
 }
@@ -404,7 +407,7 @@ body {
 @media (max-width:768px) {
     #menu-btn {
         display: initial;
-        color: var(--wc-purple);
+        color: var(--wc-light-blue);
     }
     .header .navbar {
         position: absolute;
@@ -429,7 +432,7 @@ body {
         font-size: 1rem;
         display: block;
         margin: 2.5rem;
-        color: #6A0E97;
+        color: #09086e;
     }
     .header .navbar a.active {
         padding: unset;
@@ -455,7 +458,7 @@ body {
         background-repeat: no-repeat;
     }
     #menu-btn {
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding: .5rem .5rem;
     }
     .mylogo {
@@ -469,12 +472,19 @@ body {
         width: 100%;
         text-align: center;
     }
+    .appointment-content .appointment-card-container .appointment-card {
+        width: unset;
+        margin: 1rem;
+    }
     .map-part .the-form form {
         margin: 2rem;
         padding: 1rem;
     }
     .content-part .content-content {
         padding: 2rem;
+    }
+    .head {
+        width: 100%;
     }
     .map-part .the-form h2 {
         color: var(--wc-light-blue);
