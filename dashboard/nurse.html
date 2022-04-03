@@ -124,17 +124,20 @@
 
                     <div class="d-numbers scheduled-appointments">20</div>
 
-                    <div class="card-sm-text"><button class="wh lt-bl-bg-2">Log Vitals</button></div>
+                    <div class="card-sm-text flex gap"><button class="wh lt-bl-bg-2">Register</button>
+                        <button class="wh lt-bl-bg-2">Log Vitals</button>
+                    </div>
+
                 </div>
 
                 <div class="col-2-3 pd-3s wh-bg br-8">
                     <div class="f-container m-btm-1">
-                        <div class="sm-bold-text">Today's OPD</div>
+                        <div class="sm-bold-text">InPatients</div>
                     </div>
 
-                    <div class="d-numbers waiting-room">15</div>
+                    <div class="d-numbers waiting-room">Drugs Administered</div>
 
-                    <div class="card-sm-text"><button class="wh lt-bl-bg-2">Register</button></div>
+                    <div class="card-sm-text"><button class="wh lt-bl-bg-2">Log</button></div>
                 </div>
 
                 <div class="col-2-3 pd-3s wh-bg br-8">
@@ -144,7 +147,7 @@
 
                     <div class="d-numbers waiting-room">323</div>
 
-                    <div class="card-sm-text"><i class=" red fa fa-arrow-down" aria-hidden="true"></i> &nbsp; 14% since last month</div>
+                    
                 </div>
 
             </div>
@@ -158,41 +161,17 @@
                             <div class="f-18 bd-7 b-btm f-14-sm">Vital Signs</div>
                         </div>
 
-                        <div id="activities" class="pd-3 ">
-                            <div class="flex  pd-2">
-                                <img src="../images/scheduled-appointments-icon.svg" alt="">
-                                <div>
-                                    <h4 class="m-btm-1 mg-top">Dr.Rajesh - (MBBS, MD)</h4>
-                                    <p style="color: green;">Available</p>
-                                </div>
-                            </div>
-
-                            <div class="flex pd-2">
-                                <img src="../images/scheduled-appointments-icon.svg" alt="">
-                                <div>
-                                    <h4 class="m-btm-1 mg-top">Dr.Sarah - (MBBS, MD)</h4>
-                                    <p style="color: red;"> Not Available</p>
-                                </div>
-                            </div>
-
-                            <div class="flex  pd-2">
-                                <img src="../images/scheduled-appointments-icon.svg" alt="">
-                                <div>
-                                    <h4 class="m-btm-1 mg-top">Dr.Jay Soni - (MBBS, MD)</h4>
-                                    <p style="color: blue;">On leave</p>
-                                </div>
-                            </div>
-
-                            <div class="flex  pd-2">
-                                <img src="../images/scheduled-appointments-icon.svg" alt="">
-                                <div>
-                                    <h4 class="m-btm-1 mg-top">Dr.Jacob Ryan - (MBBS, MD)</h4>
-                                    <p style="color: green;">Available</p>
-                                </div>
-                            </div>
-                            <div>
-                                View all
-                            </div>
+                        <div id="vitals-form" class="pd-3 ">
+                           <form>
+                               <input type="text" placeholder="Patient's Name">
+                               <input type="text" placeholder="Card Number">
+                               <input type="text" placeholder="Temprature">
+                               <input type="text" placeholder="Blood pressure">
+                               <input type="text" placeholder="Pulse">
+                               <input type="text" placeholder="Respiratory rate">
+                                <button type="submit">Log Vitals</button>
+                           </form>
+                            
                         </div>
                     </div>
 
