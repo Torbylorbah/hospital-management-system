@@ -396,9 +396,9 @@ button:focus, button:hover {
         justify-content: space-between;
     }
 
-    .main-small > div:not(:last-child) {
+    /* .main-small > div:not(:last-child) {
         width: 48%;
-    }
+    } */
 
     .dashboard-main .col-3 {
         width: 30%;
