@@ -1,3 +1,9 @@
+body{
+    overflow-x: hidden;
+}
+#cover-me{
+    overflow-x: hidden;
+}
 .mg-top{
     margin-top: 24px;
 }
@@ -101,7 +107,10 @@ main {
     transform: scale(0.8);
 }
 
-
+.top-notification i{
+    font-size: 22px;
+    color: #000033;
+}
 .notification div {
     color: white;
     font-size: 12px;
@@ -117,7 +126,7 @@ main {
 }
 
 .dashboard-main {
-    padding: 3%;
+    padding: 1.5% 3%;
     display: grid;
     grid-template-columns: 2fr 0.9fr;
     gap: 3%;
@@ -183,9 +192,10 @@ font-size: 1.4rem;}
     cursor: pointer;
     border-radius: 5px;
     border: 0;
-    padding: 18px;
-    background-color: #6B1761 ;
+    padding: 10px;
+    background-color: #ffba00 ;
     margin-right: 20px;
+    font-size: 16px;
 }
 
 button:focus, button:hover {
@@ -197,7 +207,7 @@ button:focus, button:hover {
     display: block;
     content: "";
     margin: 18px 0 10px;
-    border: 2px solid #631C39;
+    border: 2px solid #000033 ;
     width: 60px;
 }
 
@@ -276,13 +286,8 @@ button:focus, button:hover {
 .manage:hover{
     color: black;
 }
-.sign-in-image{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
 .nurses-form{
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -297,9 +302,7 @@ button:focus, button:hover {
     padding: 15px;
 
 }
-.common{
-    padding-left: 15rem;
-}
+
 /* patient dashboard styles */
 .patientImage{
     width: 80px;
@@ -332,10 +335,14 @@ button:focus, button:hover {
     font-size: 16px;
     line-height: 30px;
 }
+/* button{
+    padding: 10px;
+    font-size: 16px;
+} */
 
 @media only screen and (max-width: 1024px) {
     aside {
-        width: 8%;
+        width: 8.5%;
     }
 
     aside a {
@@ -348,12 +355,12 @@ button:focus, button:hover {
         padding: 20% 10%;
     }
 
-    aside a img,aside a i {
+    aside a i {
         margin: auto;
     }
 
     aside a div {
-        font-size: 12px;
+        font-size: 8px;
     }
 
     a.nav-btm1 img, a.nav-top img, a.nav-btm1 i, a.nav-top i  {
@@ -374,7 +381,10 @@ button:focus, button:hover {
         display: block;
         padding: 5% 3%;
     }
-
+    .col-4{
+        width: 80%;
+        max-width: 350px;
+    }
     .dashboard-cartoon {
         filter: opacity(0.3);
     }
@@ -386,9 +396,9 @@ button:focus, button:hover {
         justify-content: space-between;
     }
 
-    .main-small > div:not(:last-child) {
+    /* .main-small > div:not(:last-child) {
         width: 48%;
-    }
+    } */
 
     .dashboard-main .col-3 {
         width: 30%;
@@ -397,12 +407,35 @@ button:focus, button:hover {
     .activities-header {
         padding: 3% 3% 0;
     }
+
+    table{
+        width: 80%;
+        padding: 2%;
+    }
+    .patient-med{
+        display: block;
+    }
+    .current{
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 650px) {
+    .the-buttons{
+        display: flex;
+        gap: 10px;
+    }
     h1 {
         font-size: 20px;
     }
+    h4{
+        font-size: 16px;
+    }
+    /* p{
+        font-size: 18px;
+    } */
 
     .f-14-sm {
         font-size: 14px;
@@ -436,13 +469,22 @@ button:focus, button:hover {
         padding: unset;
     }
 
-    aside nav a img {
+    aside nav a i {
         padding: 10px;
     }
 
     main {
         margin-left: unset;
         width: 100%;
+    }
+    .main-nav h2{
+        font-size: 25px;
+    }
+    .main-nav h4{
+        display: none;
+    }
+    .welcome-part h2{
+        font-size: 25px;
     }
 
     .main-large button {
@@ -458,8 +500,16 @@ button:focus, button:hover {
         width: 80%;
         max-width: 350px;
     }
+    .strong-head{
+        width: 100%;
+        max-width: 400px;
+    }
+    table{
+        width: 80%;
+        max-width: 350px;
+    }
 
-    .appointment-name-img {
+    /* .appointment-name-img {
         padding: 1.5% 6%;
     }
 
@@ -469,7 +519,8 @@ button:focus, button:hover {
 
     .appointment-name-img .image img{
         width: 100%;
-    }
+    } */
+    
 }
 
 @media only screen and (max-width: 400px) {
