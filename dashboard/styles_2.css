@@ -192,9 +192,10 @@ font-size: 1.4rem;}
     cursor: pointer;
     border-radius: 5px;
     border: 0;
-    padding: 18px;
+    padding: 10px;
     background-color: #ffba00 ;
     margin-right: 20px;
+    font-size: 16px;
 }
 
 button:focus, button:hover {
@@ -285,13 +286,8 @@ button:focus, button:hover {
 .manage:hover{
     color: black;
 }
-.sign-in-image{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
 .nurses-form{
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -306,9 +302,7 @@ button:focus, button:hover {
     padding: 15px;
 
 }
-.common{
-    padding-left: 15rem;
-}
+
 /* patient dashboard styles */
 .patientImage{
     width: 80px;
@@ -341,15 +335,10 @@ button:focus, button:hover {
     font-size: 16px;
     line-height: 30px;
 }
-button{
-    padding: 8px;
-    font-size: 18px;
-}
-.patient-button{
-    padding: 20px 10px;
+/* button{
+    padding: 10px;
     font-size: 16px;
-}
-
+} */
 
 @media only screen and (max-width: 1024px) {
     aside {
@@ -371,7 +360,7 @@ button{
     }
 
     aside a div {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     a.nav-btm1 img, a.nav-top img, a.nav-btm1 i, a.nav-top i  {
@@ -440,6 +429,12 @@ button{
     h1 {
         font-size: 20px;
     }
+    h4{
+        font-size: 16px;
+    }
+    /* p{
+        font-size: 18px;
+    } */
 
     .f-14-sm {
         font-size: 14px;
