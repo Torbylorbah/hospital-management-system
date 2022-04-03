@@ -26,10 +26,8 @@ const admittedPatients = [{
         department: 'available hospitals',
 
         available: true
-    },
-    {
-
     }
+
 ]
 
 // let myHospital = 0

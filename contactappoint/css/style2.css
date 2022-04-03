@@ -10,10 +10,15 @@
 
 .red-color {
     color: #FF6B0B;
+    padding-left: 1rem;
 }
 
 .mg-buttom {
     margin-bottom: 20px;
+}
+
+.press {
+    padding-left: 1rem;
 }
 
 .font1 {
