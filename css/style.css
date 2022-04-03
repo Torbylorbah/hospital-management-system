@@ -783,109 +783,109 @@ section {
 
 
 /* media queries  */
-@media(max-width:1440px) {
-    .about .row .content p {
-        padding: 1rem 0;
-        font-size: 1.6rem;
-    }
-}
-
-@media (max-width:1024px) {
-    .about .row .content h3 {
-        color: var(--black);
-        text-shadow: var(--text-shadow);
-        font-size: 4rem;
-        line-height: 1.8;
-        padding-top: 6rem;
-    }
-}
-
-@media (max-width:991px) {
-    html {
-        font-size: 55%;
+    @media(max-width:1440px) {
+        .about .row .content p {
+            padding: 1rem 0;
+            font-size: 1.6rem;
+        }
     }
 
-    .header {
-        padding: 2rem;
+    @media (max-width:1024px) {
+        .about .row .content h3 {
+            color: var(--black);
+            text-shadow: var(--text-shadow);
+            font-size: 4rem;
+            line-height: 1.8;
+            padding-top: 6rem;
+        }
     }
 
-    section {
-        padding: 2rem;
-    }
-}
+    @media (max-width:991px) {
+        html {
+            font-size: 55%;
+        }
 
-@media (max-width:839px) {
-    .about .row .image img {
-        height: unset;
-    }
-}
+        .header {
+            padding: 2rem;
+        }
 
-@media (max-width:768px) {
-    #menu-btn {
-        display: initial;
-        color: rgb(4, 28, 63);
+        section {
+            padding: 2rem;
+        }
     }
 
-    .header .navbar {
-        position: absolute;
-        top: 115%;
-        right: 2rem;
-        border-radius: .5rem;
-        box-shadow: var(--box-shadow);
-        width: 30rem;
-        border: var(--border);
-        background: #fff;
-        transform: scale(0);
-        opacity: 0;
-        transform-origin: top right;
-        transition: none;
+    @media (max-width:839px) {
+        .about .row .image img {
+            height: unset;
+        }
     }
 
-    .header .navbar.active {
-        transform: scale(1);
-        opacity: 1;
-        transition: .5s ease-out;
+    @media (max-width:768px) {
+        #menu-btn {
+            display: initial;
+            color: rgb(4, 28, 63);
+        }
+
+        .header .navbar {
+            position: absolute;
+            top: 115%;
+            right: 2rem;
+            border-radius: .5rem;
+            box-shadow: var(--box-shadow);
+            width: 30rem;
+            border: var(--border);
+            background: #fff;
+            transform: scale(0);
+            opacity: 0;
+            transform-origin: top right;
+            transition: none;
+        }
+
+        .header .navbar.active {
+            transform: scale(1);
+            opacity: 1;
+            transition: .5s ease-out;
+        }
+
+        .header .navbar a {
+            font-size: 2rem;
+            display: block;
+            margin: 2.5rem;
+            color: var(--wc-light-blue);
+        }
+
+        .header .navbar a.active {
+            padding: unset;
+        }
+
+        .home-section .common {
+            margin-top: 10rem;
+        }
     }
 
-    .header .navbar a {
-        font-size: 2rem;
-        display: block;
-        margin: 2.5rem;
-        color: var(--wc-light-blue);
-    }
+    @media (max-width:450px) {
+        html {
+            font-size: 50%;
+        }
 
-    .header .navbar a.active {
-        padding: unset;
-    }
+        .about .row .content h3 {
+            padding-top: 2rem;
+        }
 
-    .home-section .common {
-        margin-top: 10rem;
-    }
-}
+        .man {
+            display: block;
+        }
 
-@media (max-width:450px) {
-    html {
-        font-size: 50%;
-    }
+        .your-health {
+            background-position: center;
+            background-size: cover;
+        }
 
-    .about .row .content h3 {
-        padding-top: 2rem;
+        .admin-img {
+            width: 80%;
+            background-color: #fff;
+            border: 2px solid rgb(226, 140, 12);
+            border-radius: 10px;
+            margin: 4rem;
+        }
     }
-
-    .man {
-        display: block;
-    }
-
-    .your-health {
-        background-position: center;
-        background-size: cover;
-    }
-
-    .admin-img {
-        width: 80%;
-        background-color: #fff;
-        border: 2px solid rgb(226, 140, 12);
-        border-radius: 10px;
-        margin: 4rem;
-    }
-}
