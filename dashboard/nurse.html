@@ -27,27 +27,27 @@
                 <div>Dashboard</div>
             </a>
 
-            <a href="">
+            <a href="#" target="blank">
                 <i class="fa fa-calendar-check-o"></i>
                 <div>Schedule</div>
             </a>
 
-            <a href="">
+            <a href="#" target="blank">
                 <i class="fa fa-file"></i>
                 <div>Patient's Record</div>
             </a>
 
-            <a href="">
+            <a href="#" target="blank">
                 <i class="fas fa-prescription-bottle-alt"></i>
                 <div>Prescriptions</div>
             </a>
 
-            <a href="">
+            <a href="#" target="blank">
                 <i class="fas fa-file-medical"></i>
                 <div>Report</div>
             </a>
 
-            <a href="">
+            <a href="#" target="blank">
                 <i class="fa fa-comments-o"></i>
                 <div>Chats</div>
             </a>
@@ -132,11 +132,12 @@
 
                 <div class="col-2-3 pd-3s wh-bg br-8">
                     <div class="f-container m-btm-1">
-                        <div class="sm-bold-text">Drugs Administered</div>
+                        <div class="sm-bold-text">Medications</div>
                     </div>
 
+                    <div class="d-numbers scheduled-appointments">50</div>
 
-                    <div class="card-sm-text"><button class="wh lt-bl-bg-2">Log</button></div>
+                    <div class="card-sm-text"><button class="wh lt-bl-bg-2">Check and Log</button></div>
                 </div>
 
                 <div class="col-2-3 pd-3s wh-bg br-8">
@@ -146,7 +147,7 @@
 
                     <div class="d-numbers waiting-room">323</div>
 
-                    
+                     <div class="card-sm-text"><button class="wh lt-bl-bg-2">Check and Log</button></div>
                 </div>
 
             </div>
@@ -168,7 +169,7 @@
                                <input type="text" placeholder="Blood pressure">
                                <input type="text" placeholder="Pulse">
                                <input type="text" placeholder="Respiratory rate">
-                                <button type="submit">Log Vitals</button>
+                                <button type="submit">Save Vitals</button>
                            </form>
                             
                         </div>
@@ -260,12 +261,59 @@
                             </tbody>
                         </table>
                     </div>
+
+                    <section class="pd-3">
+                        <div class="the-form2 shadow next-patients br-8 wh-bg m-btm-2 pd-3">
+                            <h2 class="m-btm-1">Patient's Details</h2>
+                            <form class="nurses-form">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Patient's Firstname..">
+            
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Patient's Lastname..">
+            
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address" placeholder="Address..">
+            
+                                <label for="Age">Age</label>
+                                <input type="text" id="age" name="age" placeholder="**..">
+            
+                                <label for="lname">Height</label>
+                                <input type="text" id="height" name="height" placeholder="***..">
+            
+                                <label for="weight">weight</label>
+                                <input type="text" id="weight" name="weight" placeholder="weight..">
+            
+                                <label for="bp">BP Level</label>
+                                <input type="text" id="bpLevel" name="bpLevel" placeholder="**/ **..">
+            
+                                <label for="department">Department</label>
+                                <select id="department" name="department">
+                                    <option value="obg">OBG</option>
+                                    <option value="gs">General Surgery</option>
+                                    <option value="opthamology">Opthamology</option>
+                                    <option value="radiology">Radiology</option>
+                                    <option value="dental">Dental</option>
+                                    <option value="oncology">Oncology</option>
+                                  </select>
+            
+                                <label for="typeOfPatient">Department</label>
+                                <select id="typeOfPatient" name="typeOfPatient">
+                                    <option value="outPatient">Out Patient</option>
+                                    <option value="emergencyPatient">Emergency Patient</option>
+                                    <option value="regularPatient">Regular Patient</option>
+                                  </select>
+            
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </section>
                 </div>
 
                 <div class="main-small">
                     <div class="next-patients br-8 wh-bg m-btm-2">
                         <div class="f-container activities-header">
-                            <div class="f-18 bd-7 b-btm f-14-sm">DOCTORS LIST</div>
+                            <div class="f-18 bd-7 b-btm f-14-sm">Doctor's List</div>
                         </div>
 
                         <div id="activities" class="pd-3 ">
@@ -304,102 +352,56 @@
                                 View all
                             </div>
                         </div>
+                    </div>
+
+                    <div id="activities" class="pd-3 ">
+                        <div class="flex  pd-2">
+                            <img src="../images/pic-2.png" class="patientNotImage">
+                            <div>
+                                <h4 class="m-btm-1 mg-top">Blessing RN. - (MBBS, MD)</h4>
+                                <p style="color: green;">Available</p>
+                            </div>
+                        </div>
+
+                        <div class="flex pd-2">
+                            <img src="../images/pic-1.png" class="patientNotImage">
+                            <div>
+                                <h4 class="m-btm-1 mg-top">Sarah Chris RN.- (MBBS, MD)</h4>
+                                <p style="color: red;"> Not Available</p>
+                            </div>
+                        </div>
+
+                        <div class="flex  pd-2">
+                            <img src="../images/pic-3.png" class="patientNotImage">
+                            <div>
+                                <h4 class="m-btm-1 mg-top">Jacob Ryan RN. - (MBBS, MD)</h4>
+                                <p style="color: blue;">On leave</p>
+                            </div>
+                        </div>
+
+                        <div class="flex  pd-2">
+                            <img src="../images/pic-1.png " class="patientNotImage">
+                            <div>
+                                <h4 class="m-btm-1 mg-top">Bulus Ryan RN.- (MBBS, MD)</h4>
+                                <p style="color: green;">Available</p>
+                            </div>
+                        </div>
+                        <div>
+                            View all
+                        </div>
+                    </div>
+                    
+                    <div class="next-patients br-8 wh-bg m-btm-2">
+                        <img src="../images/big-calender.svg">
                     </div>
 
                     <div class="next-patients br-8 wh-bg m-btm-2">
-                        <div class="f-container activities-header">
-                            <div class="f-18 bd-7 b-btm f-14-sm">DOCTORS LIST</div>
-                        </div>
-
-                        <div id="activities" class="pd-3 ">
-                            <div class="flex  pd-2">
-                                <img src="../images/scheduled-appointments-icon.svg" alt="">
-                                <div>
-                                    <h4 class="m-btm-1 mg-top">Dr.Rajesh - (MBBS, MD)</h4>
-                                    <p style="color: green;">Available</p>
-                                </div>
-                            </div>
-
-                            <div class="flex pd-2">
-                                <img src="../images/scheduled-appointments-icon.svg" alt="">
-                                <div>
-                                    <h4 class="m-btm-1 mg-top">Dr.Sarah - (MBBS, MD)</h4>
-                                    <p style="color: red;"> Not Available</p>
-                                </div>
-                            </div>
-
-                            <div class="flex  pd-2">
-                                <img src="../images/scheduled-appointments-icon.svg" alt="">
-                                <div>
-                                    <h4 class="m-btm-1 mg-top">Dr.Jay Soni - (MBBS, MD)</h4>
-                                    <p style="color: blue;">On leave</p>
-                                </div>
-                            </div>
-
-                            <div class="flex  pd-2">
-                                <img src="../images/scheduled-appointments-icon.svg" alt="">
-                                <div>
-                                    <h4 class="m-btm-1 mg-top">Dr.Jacob Ryan - (MBBS, MD)</h4>
-                                    <p style="color: green;">Available</p>
-                                </div>
-                            </div>
-                            <div>
-                                View all
-                            </div>
-                        </div>
+                        <img src="../images/patients by gender.svg">
                     </div>
+                    
                 </div>
             </div>
         </section>
-
-        <section class="pd-3">
-            <div class="the-form2 shadow next-patients br-8 wh-bg m-btm-2 pd-3">
-                <h2 class="m-btm-1">Patient's Details</h2>
-                <form class="nurses-form">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Patient's Firstname..">
-
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Patient's Lastname..">
-
-                    <label for="address">Address</label>
-                    <input type="text" id="address" name="address" placeholder="Address..">
-
-                    <label for="Age">Age</label>
-                    <input type="text" id="age" name="age" placeholder="**..">
-
-                    <label for="lname">Height</label>
-                    <input type="text" id="height" name="height" placeholder="***..">
-
-                    <label for="weight">weight</label>
-                    <input type="text" id="weight" name="weight" placeholder="weight..">
-
-                    <label for="bp">BP Level</label>
-                    <input type="text" id="bpLevel" name="bpLevel" placeholder="**/ **..">
-
-                    <label for="department">Department</label>
-                    <select id="department" name="department">
-                        <option value="obg">OBG</option>
-                        <option value="gs">General Surgery</option>
-                        <option value="opthamology">Opthamology</option>
-                        <option value="radiology">Radiology</option>
-                        <option value="dental">Dental</option>
-                        <option value="oncology">Oncology</option>
-                      </select>
-
-                    <label for="typeOfPatient">Department</label>
-                    <select id="typeOfPatient" name="typeOfPatient">
-                        <option value="outPatient">Out Patient</option>
-                        <option value="emergencyPatient">Emergency Patient</option>
-                        <option value="regularPatient">Regular Patient</option>
-                      </select>
-
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </section>
-
-        
 
 
     </main>
