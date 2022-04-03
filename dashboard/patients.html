@@ -27,12 +27,12 @@
             </a>
 
             <a href="#">
-                <i class="fa fa-calender"></i>
+                <i class="fa fa-calendar"></i>
                 <div>My Appointment</div>
             </a>
 
             <a href="#">
-                <i class="fa fa-messages"></i>
+                <i class="fa fa-envelope"></i>
                 <div>Messages</div>
             </a>
 
@@ -83,19 +83,19 @@
             </div>
         </div>
 
-        <section class="gr-bg schedule-top">
-            <div class="pd-7 bg-color rel br-8 wh">
+        <section class="schedule-top">
+            <div class="pd-3 bg-color rel br-8 wh">
                 <h1 class="m-btm-1">Welcome, Damien</h1>
 
                 <p class="m-btm-1 dashboard-p" id="schedule_p">You have 3 unread messages and 1 Rx request that needs attention
                 </p>
 
-               <div class="the-buttons">
-                <button class="wh lt-bl-bg-2"><i class="wh fa fa-eye" aria-hidden="true"></i> &nbsp; Log your
-                    vitals</button>
-                <button class="wh lt-bl-bg-2"><i class="wh fa fa-eye" aria-hidden="true"></i> &nbsp; Chat with a
+               <div class="the-buttons flex">
+                <button class="wh lt-bl-bg-2 patient-button"><i class="wh fa fa-eye" aria-hidden="true"></i> &nbsp;View Lab 
+                    result</button>
+                <button class="wh lt-bl-bg-2 patient-button"><i class="wh fa fa-comments-o" aria-hidden="true"></i> &nbsp; Chat with a
                     Nurse</button>
-                <button class="wh lt-bl-bg-2"><i class="wh fa fa-eye" aria-hidden="true"></i> &nbsp; Book
+                <button class="wh lt-bl-bg-2 patient-button"><i class="wh fa fa-calendar" aria-hidden="true"></i> &nbsp; Book
                     Appointment</button>
                </div>
                 <img class="dashboard-cartoon" src="../images/schedule-cartoon.svg" alt="">
@@ -132,24 +132,24 @@
 
                     <div>
                         <div class="f-container m-btm-2 shdw pd-3 br">
-                            <div class="">
+                            <div class="line-h">
                                 <p>Date</p>
                                 <h4>Friday 17 April,2022</h4>
                             </div>
-                            <div>
+                            <div class="line-h">
                                 <p>Time</p>
                                 <h4>9:30am - 10:00am</h4>
                                 <p><i class="fa fa-clock-o"></i> <span style="color: blue;">30mins</span></p>
                             </div>
                         </div>
                         <div class="f-container shdw pd-3 br">
-                            <div>
+                            <div class="line-h">
                                 <p>Address</p>
                                 <h4>No 1,OgunTechHub,Kobape Road,Abk.</h4>
                             </div>
                             <div>
                                 <p>Areas of interest</p>
-                                <h4 class="m-btm-1">Men health
+                                <h4 class="m-btm-1 line-h">Men health
                                     <br> Travel Medicines
                                     <br> Travel advice
                                     <br> General practice
@@ -169,28 +169,9 @@
                     </div>
                 </div>
             </div>
-            <div id="appointments" class="next-patients br-8 wh-bg m-btm-2">
-                <div class="f-container pd-3">
-                    <div class="f-18 f-14-sm bd-7 b-btm">Visits</div>
-                    <div class="lt-bl f-14-sm"><span class="orange"><i class="fa fa-arrow-right"></i></span></div>
-                </div>
 
-                <div class="pd">
-                    <table style="width: 100%;">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Department</th>
-                                <th>Doctor</th>
-                                <th>Result</th>
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-            </div>
-
-            <div class="container m-btm-2 mg-top">
-                <div class="col-four pd-3s wh-bg br-8">
+            <div class="container m-btm-2 mg-top patient-med">
+                <div class="col-four pd-3s wh-bg br-8 current">
                     <div class=" m-btm-1">
                         <div class="sm-bold-text">Current Conditions</div>
                     </div>
@@ -231,50 +212,51 @@
                     </div>
                 </div>
 
-            </div>
-
-            <div class="col-four pd-3s wh-bg br-8">
-                <div class="f-container m-btm-1">
-                    <div class="sm-bold-text">Recent Bills</div>
-                </div>
-
-                <div>
-                    <div class="f-container m-btm-2 shdw pd-3 br">
-                        <div class="line-h">
-                            <p>Your Payment</p>
-                            <h4>$110.00</h4>
-                        </div>
-                        <div class="line-h">
-                            <p>Medicare</p>
-                            <h4>$124.00</h4>
-                        </div>
-                        <div>
-                            <i class="fa fa-ellipsis-v"></i>
-                        </div>
+                <div class="col-four pd-3s wh-bg br-8 current">
+                    <div class="f-container m-btm-1">
+                        <div class="sm-bold-text">Recent Bills</div>
                     </div>
-                    <div class="f-container shdw pd-3 br">
-                        <div class="line-h">
-                            <p>Paid on the 27 March,2022 to <strong>HealthMS</strong></p>
-                        </div>
-                        <div class="line-h">
-                            <p>Total</p>
-                            <h4>$324.00</h4>
-                        </div>
-                    </div>
-                    <div class="f-container mg-top gap">
-                        <div class="flex gap">
-                            <img src="../images/pic-1.png" class="patientNotImage">
+    
+                    <div>
+                        <div class="f-container m-btm-2 shdw pd-3 br">
                             <div class="line-h">
-                                <h4>Dr Steven Kalish</h4>
-                                <p>Otolaryngologist</p>
+                                <p>Your Payment</p>
+                                <h4>$110.00</h4>
+                            </div>
+                            <div class="line-h">
+                                <p>Medicare</p>
+                                <h4>$124.00</h4>
+                            </div>
+                            <div>
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                        <div class="f-container shdw pd-3 br">
+                            <div class="line-h">
+                                <p>Paid on the 27 March,2022 to <strong>HealthMS</strong></p>
+                            </div>
+                            <div class="line-h">
+                                <p>Total</p>
+                                <h4>$324.00</h4>
+                            </div>
+                        </div>
+                        <div class="f-container mg-top gap">
+                            <div class="flex gap">
+                                <img src="../images/pic-1.png" class="patientNotImage">
+                                <div class="line-h">
+                                    <h4>Dr Steven Kalish</h4>
+                                    <p>Otolaryngologist</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+           
         </section>
 
-        <section class="gr-bg dashboard-main">
+        <section class="purple-bg dashboard-main">
             <div class="main-large">
                 <div class="next-patients br-8 wh-bg m-btm-2">
                     <div class="f-container activities-header">
