@@ -539,13 +539,13 @@ button:focus, button:hover {
         padding: 5px 10px;
     }
 
-    .appointment-name-img > *:first-child {
+    /* .appointment-name-img > *:first-child {
         display: none;
-    }
+    } */
 
-    #activities > div > *:first-child {
+    /* #activities > div > *:first-child {
         display: none;
-    }
+    } */
 }
 
 @media only screen and (max-width: 290px) {
