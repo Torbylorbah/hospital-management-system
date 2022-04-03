@@ -302,6 +302,15 @@ button:focus, button:hover {
     padding: 15px;
 
 }
+#vitals-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+#vitals-form form input{
+    padding: 15px;
+}
 
 /* patient dashboard styles */
 .patientImage{
