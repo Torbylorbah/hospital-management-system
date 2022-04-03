@@ -418,6 +418,14 @@ button{
     table{
         width: 80%;
     }
+    .patient-med{
+        display: block;
+    }
+    .current{
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -503,9 +511,7 @@ button{
     .appointment-name-img .image img{
         width: 100%;
     } */
-    .patient-med{
-        display: block;
-    }
+    
 }
 
 @media only screen and (max-width: 400px) {

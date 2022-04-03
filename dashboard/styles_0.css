@@ -280,7 +280,7 @@ table{
 }
 table td,th{
     /* border: 1px solid #292727; */
-    text-align: left;
+    text-align: center;
     padding: 8px;
     font-size: 15px;
 }
@@ -309,11 +309,6 @@ table td,th{
     .col-2 {
         width: 100%;
         margin: 10px auto;
-    }
-
-
-    .app-store-image {
-        display: none;
     }
 
     .t-a-c {text-align: center;}
