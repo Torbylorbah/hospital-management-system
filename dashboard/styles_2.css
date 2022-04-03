@@ -410,6 +410,7 @@ button:focus, button:hover {
 
     table{
         width: 80%;
+        padding: 2%;
     }
     .patient-med{
         display: block;
@@ -475,6 +476,15 @@ button:focus, button:hover {
     main {
         margin-left: unset;
         width: 100%;
+    }
+    .main-nav h2{
+        font-size: 25px;
+    }
+    .main-nav h4{
+        display: none;
+    }
+    .welcome-part h2{
+        font-size: 25px;
     }
 
     .main-large button {
