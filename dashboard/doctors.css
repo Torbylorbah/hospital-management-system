@@ -38,6 +38,27 @@
         box-sizing: border-box; 
 }
 
+#requestAccepted {
+    display: none;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    opacity: 0;
+    color: #ffba00;
+    animation-name: request;
+    animation-duration: 2s;
+}
+
+@keyframes request {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
 @media only screen and (max-width: 650px) {
     table{
         width: 50%;
