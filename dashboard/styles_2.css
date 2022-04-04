@@ -518,18 +518,6 @@ button:focus, button:hover {
         max-width: 350px;
     }
 
-    /* .appointment-name-img {
-        padding: 1.5% 6%;
-    }
-
-    .appointment-name-img .image {
-        width: 30px;
-    }
-
-    .appointment-name-img .image img{
-        width: 100%;
-    } */
-    
 }
 
 @media only screen and (max-width: 400px) {
@@ -539,13 +527,6 @@ button:focus, button:hover {
         padding: 5px 10px;
     }
 
-    /* .appointment-name-img > *:first-child {
-        display: none;
-    } */
-
-    /* #activities > div > *:first-child {
-        display: none;
-    } */
 }
 
 @media only screen and (max-width: 290px) {
