@@ -81,7 +81,6 @@ section {
     0% {
         transform: scale(1.2);
     }
-
     100% {
         transform: scale(1);
     }
@@ -244,7 +243,6 @@ section {
     0% {
         transform: translateY(40rem) rotateY(-20deg);
     }
-
     100% {
         transform: translateY(0) rotateY(0);
         opacity: 1;
@@ -327,9 +325,10 @@ section {
 }
 
 .about .row {
-    display: flex;
+    display: grid;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
 }
 
@@ -339,7 +338,7 @@ section {
 
 .about .row .image img {
     width: 100%;
-    height: 90vh;
+    /* height: 90vh; */
     border-radius: 10px;
     box-shadow: 0 0 0.9rem rgb(0, 0, 0, 0.1);
 }
@@ -691,7 +690,7 @@ section {
 }
 
 .btn-n:hover {
-    background: var(--wc-purple);
+    background: var(--wc-light-blue);
     color: #fff;
 }
 
@@ -781,109 +780,105 @@ section {
 
 
 /* media queries  */
-    @media(max-width:1440px) {
-        .about .row .content p {
-            padding: 1rem 0;
-            font-size: 1.6rem;
-        }
+
+@media(max-width:1440px) {
+    .about .row .content p {
+        padding: 1rem 0;
+        font-size: 1.6rem;
     }
+}
 
-    @media (max-width:1024px) {
-        .about .row .content h3 {
-            color: var(--black);
-            text-shadow: var(--text-shadow);
-            font-size: 4rem;
-            line-height: 1.8;
-            padding-top: 6rem;
-        }
+@media (max-width:1024px) {
+    .about .row .content h3 {
+        color: var(--black);
+        text-shadow: var(--text-shadow);
+        font-size: 4rem;
+        line-height: 1.8;
+        padding-top: 6rem;
     }
+    /* .about .row .image img {
+        height: 80vh;
+    } */
+}
 
-    @media (max-width:991px) {
-        html {
-            font-size: 55%;
-        }
-
-        .header {
-            padding: 2rem;
-        }
-
-        section {
-            padding: 2rem;
-        }
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
     }
-
-    @media (max-width:839px) {
-        .about .row .image img {
-            height: unset;
-        }
+    .header {
+        padding: 2rem;
     }
-
-    @media (max-width:768px) {
-        #menu-btn {
-            display: initial;
-            color: rgb(4, 28, 63);
-        }
-
-        .header .navbar {
-            position: absolute;
-            top: 115%;
-            right: 2rem;
-            border-radius: .5rem;
-            box-shadow: var(--box-shadow);
-            width: 30rem;
-            border: var(--border);
-            background: #fff;
-            transform: scale(0);
-            opacity: 0;
-            transform-origin: top right;
-            transition: none;
-        }
-
-        .header .navbar.active {
-            transform: scale(1);
-            opacity: 1;
-            transition: .5s ease-out;
-        }
-
-        .header .navbar a {
-            font-size: 2rem;
-            display: block;
-            margin: 2.5rem;
-            color: var(--wc-light-blue);
-        }
-
-        .header .navbar a.active {
-            padding: unset;
-        }
-
-        .home-section .common {
-            margin-top: 10rem;
-        }
+    section {
+        padding: 2rem;
     }
+}
 
-    @media (max-width:450px) {
-        html {
-            font-size: 50%;
-        }
-
-        .about .row .content h3 {
-            padding-top: 2rem;
-        }
-
-        .man {
-            display: block;
-        }
-
-        .your-health {
-            background-position: center;
-            background-size: cover;
-        }
-        .admin-img {
-            width: 80%;
-            background-color: #fff;
-            border: 2px solid rgb(226, 140, 12);
-            border-radius: 10px;
-            margin: 4rem;
-        }
-
+@media (max-width:839px) {
+    .about .row .image img {
+        height: unset;
     }
+}
+
+@media (max-width:768px) {
+    #menu-btn {
+        display: initial;
+        color: rgb(4, 28, 63);
+    }
+    .header .navbar {
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        width: 30rem;
+        border: var(--border);
+        background: #fff;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+    .header .navbar.active {
+        transform: scale(1);
+        opacity: 1;
+        transition: .5s ease-out;
+    }
+    .header .navbar a {
+        font-size: 2rem;
+        display: block;
+        margin: 2.5rem;
+        color: var(--wc-light-blue);
+    }
+    .header .navbar a.active {
+        padding: unset;
+    }
+    .home-section .common {
+        margin-top: 10rem;
+    }
+    .about .row {
+        display: block;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    .about .row .content h3 {
+        padding-top: 2rem;
+    }
+    .man {
+        display: block;
+    }
+    .your-health {
+        background-position: center;
+        background-size: cover;
+    }
+    .admin-img {
+        width: 80%;
+        background-color: #fff;
+        border: 2px solid rgb(226, 140, 12);
+        border-radius: 10px;
+        margin: 4rem;
+    }
+}
