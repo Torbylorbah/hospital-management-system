@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../images/logo-icon.svg">
     <title>Nurse's Page</title>
+    <!---aos css file cdn link---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="./styles_0.css">
     <link rel="stylesheet" href="./styles_2.css">
     <link rel="stylesheet" href="./sign-up.css">
@@ -101,14 +103,14 @@
 
                 <div class="the-buttons flex">
                     <button class="wh lt-bl-bg-2"><i class="wh fa fa-eye"></i> &nbsp; Check your roaster</button>
-                <button class="wh lt-bl-bg-2"><i class="wh fa fa-eye"></i> &nbsp; Register a new patient</button>
+                    <button class="wh lt-bl-bg-2"><i class="wh fa fa-eye"></i> &nbsp; Register a new patient</button>
                 </div>
 
                 <img class="dashboard-cartoon" src="../images/schedule-cartoon.svg" alt="">
             </div>
 
             <div class="container m-btm-2 mg-top">
-                <div class="col-2-3 pd-3s wh-bg br-8">
+                <div class="col-2-3 pd-3s wh-bg br-8" data-aos="fade-right">
                     <div class="f-container m-btm-1">
                         <div class="sm-bold-text">Appointments </div>
                     </div>
@@ -117,7 +119,7 @@
                     <div class="card-sm-text"><button class="wh lt-bl-bg-2">Check-in with the doctors </button></div>
                 </div>
 
-                <div class="col-2-3 pd-3s wh-bg br-8">
+                <div class="col-2-3 pd-3s wh-bg br-8" data-aos="fade-up">
                     <div class="f-container m-btm-1">
                         <div class="sm-bold-text">New Patients </div>
                     </div>
@@ -130,7 +132,7 @@
 
                 </div>
 
-                <div class="col-2-3 pd-3s wh-bg br-8">
+                <div class="col-2-3 pd-3s wh-bg br-8" data-aos="fade-left">
                     <div class="f-container m-btm-1">
                         <div class="sm-bold-text">Medications</div>
                     </div>
@@ -140,14 +142,14 @@
                     <div class="card-sm-text"><button class="wh lt-bl-bg-2">Check and Log</button></div>
                 </div>
 
-                <div class="col-2-3 pd-3s wh-bg br-8">
+                <div class="col-2-3 pd-3s wh-bg br-8" data-aos="fade-down">
                     <div class="f-container m-btm-1">
                         <div class="sm-bold-text"> Visitors </div>
                     </div>
 
                     <div class="d-numbers waiting-room">323</div>
 
-                     <div class="card-sm-text"><button class="wh lt-bl-bg-2">Check and Log</button></div>
+                    <div class="card-sm-text"><button class="wh lt-bl-bg-2">Check and Log</button></div>
                 </div>
 
             </div>
@@ -162,16 +164,16 @@
                         </div>
 
                         <div id="vitals-form" class="pd-3 ">
-                           <form>
-                               <input type="text" placeholder="Patient's Name">
-                               <input type="text" placeholder="Card Number">
-                               <input type="text" placeholder="Temprature">
-                               <input type="text" placeholder="Blood pressure">
-                               <input type="text" placeholder="Pulse">
-                               <input type="text" placeholder="Respiratory rate">
+                            <form>
+                                <input type="text" placeholder="Patient's Name">
+                                <input type="text" placeholder="Card Number">
+                                <input type="text" placeholder="Temprature">
+                                <input type="text" placeholder="Blood pressure">
+                                <input type="text" placeholder="Pulse">
+                                <input type="text" placeholder="Respiratory rate">
                                 <button type="submit">Save Vitals</button>
-                           </form>
-                            
+                            </form>
+
                         </div>
                     </div>
 
@@ -268,25 +270,25 @@
                             <form class="nurses-form">
                                 <label for="fname">First Name</label>
                                 <input type="text" id="fname" name="firstname" placeholder="Patient's Firstname..">
-            
+
                                 <label for="lname">Last Name</label>
                                 <input type="text" id="lname" name="lastname" placeholder="Patient's Lastname..">
-            
+
                                 <label for="address">Address</label>
                                 <input type="text" id="address" name="address" placeholder="Address..">
-            
+
                                 <label for="Age">Age</label>
                                 <input type="text" id="age" name="age" placeholder="**..">
-            
+
                                 <label for="lname">Height</label>
                                 <input type="text" id="height" name="height" placeholder="***..">
-            
+
                                 <label for="weight">weight</label>
                                 <input type="text" id="weight" name="weight" placeholder="weight..">
-            
+
                                 <label for="bp">BP Level</label>
                                 <input type="text" id="bpLevel" name="bpLevel" placeholder="**/ **..">
-            
+
                                 <label for="department">Department</label>
                                 <select id="department" name="department">
                                     <option value="obg">OBG</option>
@@ -296,14 +298,14 @@
                                     <option value="dental">Dental</option>
                                     <option value="oncology">Oncology</option>
                                   </select>
-            
+
                                 <label for="typeOfPatient">Department</label>
                                 <select id="typeOfPatient" name="typeOfPatient">
                                     <option value="outPatient">Out Patient</option>
                                     <option value="emergencyPatient">Emergency Patient</option>
                                     <option value="regularPatient">Regular Patient</option>
                                   </select>
-            
+
                                 <input type="submit" value="Submit">
                             </form>
                         </div>
@@ -320,7 +322,7 @@
                             <div class="flex  pd-2">
                                 <img src="../images/scheduled-appointments-icon.svg" alt="">
                                 <div>
-                                    <h4 class="m-btm-1 mg-top">Dr.Rajesh - (MBBS, MD)</h4>
+                                    <h4 class="m-btm-1 mg-top">Dr.smith - (MBBS, MD)</h4>
                                     <p style="color: green;">Available</p>
                                 </div>
                             </div>
@@ -367,7 +369,7 @@
                                     <p style="color: green;">Available</p>
                                 </div>
                             </div>
-    
+
                             <div class="flex pd-2">
                                 <img src="../images/pic-1.png" class="patientNotImage">
                                 <div>
@@ -375,7 +377,7 @@
                                     <p style="color: red;"> Not Available</p>
                                 </div>
                             </div>
-    
+
                             <div class="flex  pd-2">
                                 <img src="../images/pic-3.png" class="patientNotImage">
                                 <div>
@@ -383,7 +385,7 @@
                                     <p style="color: blue;">On leave</p>
                                 </div>
                             </div>
-    
+
                             <div class="flex  pd-2">
                                 <img src="../images/pic-1.png " class="patientNotImage">
                                 <div>
@@ -396,8 +398,8 @@
                             </div>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="next-patients br-8 wh-bg m-btm-2">
                         <img src="../images/big-calender.svg">
                     </div>
@@ -405,7 +407,7 @@
                     <div class="next-patients br-8 wh-bg m-btm-2">
                         <img src="../images/patients by gender.svg">
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -415,6 +417,15 @@
 
     <script src="https://kit.fontawesome.com/aedd297eaa.js" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
+    <!--aos js file cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            delay: 400
+        })
+    </script>s
 </body>
 
 </html>
