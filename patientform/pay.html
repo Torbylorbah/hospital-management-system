@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!---aos css file cdn link---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link href="pay.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
     <div id="helloworld">
-        <div class="wrapper">
+        <div class="wrapper" data-aos="zoom-out">
             <h2>
                 Payment Form</h2>
             <form method="POST">
@@ -44,7 +46,7 @@
 
                 </div>
                 <div class="input-group">
-                    <div class="input-box">
+                    <div class="input-box details">
                         <h4>
                             Payment Details</h4>
                         <input type="radio" name="pay" id="bc1" checked class="radio">
@@ -64,7 +66,7 @@
                         <input type="tel" placeholder="Card CVC" required class="name">
                         <i class="fa fa-user icon"></i>
                     </div>
-                    <div class="input-box">
+                    <div class="input-box common">
                         <select>
                         <option>01 April</option>
                         <option>02 April</option>
@@ -85,6 +87,16 @@
             </form>
         </div>
     </div>
+
+    <!--aos js file cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            delay: 400
+        })
+    </script>
 </body>
 
 </html>
