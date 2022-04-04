@@ -1,7 +1,7 @@
 body{
     overflow-x: hidden;
 }
-#cover-me{
+.cover-me{
     overflow-x: hidden;
 }
 .mg-top{
