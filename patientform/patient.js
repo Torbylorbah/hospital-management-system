@@ -55,5 +55,5 @@ submit.addEventListener('click', (e) => {
     } else {
         alert(`Enter your information`)
     }
-    window.location = "admin.html"
+    window.location = "../admin.html"
 })

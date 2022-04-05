@@ -36,7 +36,7 @@ const hospital = [{
         available: true
     }, {
         id: 'h04',
-        total: 10,
+        total: '05',
         name: 'Akindele Mathew',
         department: 'available hospitals',
 
