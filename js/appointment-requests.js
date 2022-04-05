@@ -1,9 +1,10 @@
 let requestsCont = document.querySelector('#appointment-requests')
 
 const requests = [
-    {name: 'Pollock James', purpose: 'Heart Attack', time: '20: 00', date: '4th July'},
-    {name: 'Pollock James', purpose: 'Heart Attack', time: '20: 00', date: '4th July'},
-    {name: 'Pollock James', purpose: 'Heart Attack', time: '20: 00', date: '4th July'},
+    {name: 'Pollock James', purpose: 'Online Consultation', time: '10: 00', date: '4th July'},
+    {name: 'Adetomiwa Bolanle', purpose: 'Surgery', time: '12: 00', date: '4th July'},
+    {name: 'Isaac Adebola', purpose: 'Checkup', time: '15: 00', date: '4th July'},
+    {name: 'Ifeoluwa James', purpose: 'Vaccine Inject', time: '18: 00', date: '4th July'},
 ]
 
 let i = 0
