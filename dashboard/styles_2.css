@@ -429,6 +429,9 @@ button:focus, button:hover {
         max-width: 500px;
         margin-bottom: 20px;
     }
+    .next-patients-table-div{
+        overflow-x: auto;
+    }
 }
 
 @media only screen and (max-width: 650px) {
